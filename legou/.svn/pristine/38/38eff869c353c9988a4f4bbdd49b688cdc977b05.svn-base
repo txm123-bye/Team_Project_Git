@@ -64,7 +64,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    background-image: url(./images/bgicon.png);
+    background-image: url(../images/bgicon.png);
 }
 /*搜索框*/
 .nav .search-shopcart-order .search-input .search{
@@ -95,7 +95,7 @@
 .nav .search-shopcart-order .shopcart-order button:nth-child(1){
     background-color: #ff6700;
     color: #fff;
-    background-image: url(./images/bgicon.png);
+    background-image: url(../images/bgicon.png);
     background-position: -6px -44px;
 }
 /*分类导航*/
