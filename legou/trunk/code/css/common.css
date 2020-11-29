@@ -19,10 +19,10 @@
 /*版心*/
 .container{
     width: 1200px;
-    margin-left: 360px;
+    
 }
 /*footer版心*/
 .footer-container{
     width: 1898px;
-    margin:0 auto;
+    margin-left: -340px;
 }

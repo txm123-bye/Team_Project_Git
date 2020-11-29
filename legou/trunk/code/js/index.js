@@ -118,5 +118,44 @@ $('.stationery .title-bottom .inner-box').animate({
               scrollTop:0
           },200)
           
-		});
+        });
+    /*分享二维码 */
+$('.qr_code .ticket').hover(function(){
+    //让二维滑出来
+    $('.qr_code div').animate({
+        left:'-100px'
+    })
+},function(){
+    //让二维滑进去
+    $('.qr_code div').animate({
+        left:0
+    })
+ })
+ //顶部搜索框交互
+ $(document).scroll(function(){
+    //获取到顶部的距离
+    var topDistance = $('html,body').scrollTop();
+    //判断
+    if (topDistance > 500){
+        //如果滚动距离大于500滑下来
+        $('.top-search-box').slideDown()
+    }else{
+        //否则 收回去
+        $('.top-search-box').slideUp()
+    }
+})
+// 楼层跳转
+$('.floor li').click(function(){
+    //获取索引
+    var index = $(this).index();
+    //选中每一个板块到顶部的偏移
+    var topOffset = $('.floorBox').eq(index).offset().top;
+    
+    //让滚动条滚到这个位置
+    $('html,body').animate({
+        scrollTop:topOffset - 50
+    })
+})
+
 });
+
