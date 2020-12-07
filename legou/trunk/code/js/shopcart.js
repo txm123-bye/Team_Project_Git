@@ -27,19 +27,25 @@ $(function(){
    })
    //表单中的选中状态 反过来影响全选
    $bodyInput.change(function(){
-	   //顶一个标杆
-	   var flag = true;
-	   //循环表格中所有选择框的选中状态
-	   $bodyInput.each(function(i,input){
-		   if(!$(input).prop('checked')){//只要有一个选择框没有被选中 那么状态就变为false
-			   flag = false;
-		   }
-	   })
-	   
-	   //把状态用来改变全选框
-	   $theadInput.prop('checked',flag)
-	   $allPriceInput.prop('checked',flag)
-   })
+	//顶一个标杆
+    var flag = true;
+    //总价
+    var totalPrice = 0;
+    //循环表格中所有选择框的选中状态
+    $bodyInput.each(function(i,input){
+        if(!$(input).prop('checked')){//只要有一个选择框没有被选中 那么状态就变为false
+            flag = false;
+        }else{
+         totalPrice += parseFloat( $(this).closest('tr').find('.subprice').text()); 
+        }
+    })
+    
+    //把状态用来改变全选框
+    $theadInput.prop('checked',flag)
+    $allPriceInput.prop('checked',flag)
+    //渲染到总价对应的位置
+    $('.total').text( totalPrice.toFixed(2) )
+})
    //数量的加减功能
    //加
   $('.add').on('click',function(){
@@ -85,13 +91,12 @@ $(function(){
       $(this).closest('tr').remove();
   })
   
-  //计算总价
-  $bodyInput.each(function(i, input){
-      var totalPrice = 0;
-  
-      //判断选中状态 如果被选中的 那么就需要计算总价
-      if($(input).prop('checked')){
-          totalPrice += parseFloat( $(this).closest('tr').find('.subprice').text());
-      }
-  })
+ //计算总价
+ $bodyInput.each(function(i, input){
+    var totalPrice = 0;
+   //判断选中状态 如果被选中 那么就需要计算总价
+   if($(input).prop('checked')){
+       totalPrice += parseFloat( $(this).closest('tr').find('.subprice').text());
+   }
+})
 })
