@@ -366,9 +366,7 @@
 .ebooks .left-box .content .ebooks-list > ul > li > p:last-child{
     font-size:18px;
 }
-.ebooks .left-box .content .ebooks-list > ul > li:not(:first-child){
 
-}
 /*将来的轮播容器*/
 .ebooks .left-box .content .ebooks-list ul li:first-child{
     width: 332px;
