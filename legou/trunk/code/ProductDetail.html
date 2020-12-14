@@ -10,8 +10,10 @@
         content="乐购legou.com-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!"/>
     <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,乐购"/>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/shopcart.css">
+    <link rel="stylesheet" href="./css/template.css">
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/ProductDetail.css">
+    <link rel="stylesheet" href="./css/magnifier.css">
     
 </head>
 <body>
@@ -19,7 +21,7 @@
     <div class="topbar">
         <!-- 内部内容 -->
         <div class="container clearfix">
-            <p class="fl"><a herf="#">logochina.cn</a></p>
+            <p class="fl"><a herf="#">www.legou.com</a></p>
             <p class="fr"><span>欢迎光临&nbsp;<a class="title" herf="#">乐购</a></span>,<span>请<a herf="#" class="login">登录</a>\<a herf="#" class="register">注册</a></span></p>
         </div>
     </div>
@@ -28,6 +30,11 @@
     <div class="nav container" >
         <!-- 搜索框 购物车 订单 -->
         <div class="search-shopcart-order clearfix">
+            <!-- 购物车 & 订单 -->
+            <div class="shopcart-order fr">
+                <button>&emsp;购物车&emsp;<span>3</span></button>
+                <button>我的订单</button>
+            </div>
             <div class="search-input  fr">
                 <input class="search" type="search" placeholder="创意文具"/>
                 <span class="span"></span>
@@ -37,92 +44,112 @@
             <!-- 左侧 -->
             <div class="left-logo fl">
                 <img src="./images/logo.jpg" />
+
             </div>
             <!-- 右侧 -->
-            <div class="place">
-                <span>配送至</span>
-                <select name="address" id="address">
-                    <option value="">成都高新区三环内</option>
-                </select>
-            </div>
+            <ul class="fr clearfix">
+                <li>图书</li>
+                <li>电子书</li>
+                <li>原创文学</li>
+                <li>服装</li>
+                <li>运动户外</li>
+                <li>孕婴童</li>
+                <li>家具</li>
+                <li>创意文具</li>
+                <li>地方特产</li>
+                <li>海外购</li>
+                <li>电器城</li>
+            </ul>
         </div>
     </div>
-    <!-- 3购物车内容 -->
-    <div class="shopcart container clearfix">
-        <!-- 全部商品 -->
-        <h3>全部商品（<i class="goodsCount">0</i>）</h3>
-        <!-- 表格 -->
-        <!-- 分割线 -->
-            <hr/>
-        <table>
-            <thead>
-                <tr>
-                <th><span><input type="checkbox"/></span>全选</th>
-                <th>商品</th>
-                <th>单价</th>
-                <th>数量</th>
-                <th>小计</th>
-                <th>操作</th>
-            </tr>
-            <tr></tr>
-            </thead>
-            
-            <tbody>
-                <tr>
-                    <td width="7%"><input type="checkbox"/></td>
-                    <td width="38%"><span><img src="./images/index08_05.jpg"></span><span>从你的世界路过</span></td>
-                    <td width="13%" class="price"><span>41.00</span></td>
-                    <td width="17%">
-                        <div class="add-reduce">
-                        <button class="add">+</button>
-                        <input type="text" value="1">
-                        <button class="reduce">-</button>
+    <!-- 产品详情页面 -->
+    <div class="product-datail container clearfix">
+        <div class="left-box fl">
+        <div class="fdj">
+            <div class="magnifier" id="magnifier1">
+                <div class="magnifier-container">
+                    <div class="images-cover"></div>
+                    <!--当前图片显示容器-->
+                    <div class="move-view"></div>
+                    <!--跟随鼠标移动的盒子-->
+                </div>
+                <div class="magnifier-assembly">
+                    <div class="magnifier-btn">
+                        <span class="magnifier-btn-left">&lt;</span>
+                        <span class="magnifier-btn-right">&gt;</span>
                     </div>
-                    </td>
-                    <td width="15%" class="subprice"><span>41.00</span></td>
-                    <td width="10%">
-                        <p class="del">删除</p>
-                        <p>移到我的关注</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="7%"><input type="checkbox"/></td>
-                    <td width="38%"><span><img src="./images/index08_05.jpg"></span><span>从你的世界路过</span></td>
-                    <td width="13%" class="price"><span>41.00</span></td>
-                    <td width="17%">
-                        <div class="add-reduce">
-                        <button class="add">+</button>
-                        <input type="text" value="1">
-                        <button class="reduce">-</button>
+                    <!--按钮组-->
+                    <div class="magnifier-line">
+                        <ul class="clearfix animation03">
+                            <li>
+                                <div class="small-img">
+                                    <img src="./images/f1 (1).jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="./images/f1 (2).jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="./images/f1 (3).jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="./images/f1 (4).jpg" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-img">
+                                    <img src="./images/f1 (5).jpg" />
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    </td>
-                    <td width="15%" class="subprice"><span>41.00</span></td>
-                    <td width="10%">
-                        <p class="del">删除</p>
-                        <p>移到我的关注</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <!-- 总计 -->
-        <div class="totalPrice">
-            <div class="left-box fl"> 
-            <div>
-                <input type="checkbox" name="" id="">
-                <span>全选</span>
+                    <!--缩略图-->
+                </div>
+                <div class="magnifier-view"></div>
+                <!--经过放大的图片显示容器-->
             </div>
-            <span class="deleteChecked">删除选中商品</span>
         </div>
-            <div class="right-box fr"> 
-            <div>已选&emsp;<span class="count">0</span>&emsp;件商品</div>
-            <div><span>总价</span>&emsp;<span class="total">0.00</span></div>
-            <div><button>去结算</button></div>
-        </div> 
+        <div class="buttom-text ">
+            <p>商品编号：11950959</p>
+        </div>
+    </div>
+        <div class="right-box fr">
+            <div class="book-info">
+                <h1>他和她</h1>
+                <p>《偷影子的人》作者：马克.李维重榜新作，法国连续60周在榜，销量突破120万册</p>
+                <p>【法国】马克.李维 著；杨亦雨 译</p>
+            </div>
+            <div class="promotion">
+                <p>乐购价:<span>￥26.20</span><span>[6.9折]</span><span>[定价：<span>￥38.00</span>]</span><span>(降价通知)</span></p>
+                <p>促销信息：<span>满减</span><span>每满150.00元，</span><span>可减50.00元现金</span><span>详情>></span></p>
+                <p>领&emsp;券：<span>100-6</span><span>100-6</span></p>
+            </div>
+            <div class="operation">
+                <div class="kinds">
+                    种类选择：<div>平装版</div><div>精装版</div>
+                </div>
+                <div class="many-btn">
+                 <div class="btn">
+                    <input type="text" name="" id="">
+                    <button class="up">+</button>
+                    <button class="down">-</button>
+                 </div>
+                    <button class="shopcar" type="submit">加入购物车</button>
+                </div>
+            </div>
+            <div class="tips">
+                <p>温馨提示：7天无条件退货</p>
+            </div>
         </div>
 
     </div>
-    <!-- 4猜你喜欢 -->
-    <div class="extension container">
+     <!-- 4猜你喜欢 -->
+     <div class="extension container">
         <div class="title">
             <h2>猜你喜欢</h2>
         </div>
@@ -171,8 +198,7 @@
 
     </div>
 
-
-    <!-- 4.尾部 -->
+    <!-- 11.尾部 -->
     <div class="footer footer-container">
         <div class="top">
         </div>
@@ -255,7 +281,9 @@
         <!--------------------------- 插件的引入------------------------------>
             <!-- 引入jquery。mi.js -->
             <script src="./js/jquery-1.11.3.min.js"></script>
-            <script src="./js/shopcart.js"></script>
+            <script src="./js/ProductDetail.js"></script>
+            <script src="./js/magnifier.js"></script>
+            
         </body>
         </html>
         

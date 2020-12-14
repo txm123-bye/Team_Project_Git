@@ -1,0 +1,219 @@
+
+.product-datail{
+    height: 500px;
+    margin: 50px 0px;
+    border: 2px solid #f1f1f1;
+}
+.product-datail .left-box{
+    height: 498px;
+    width: 365px;
+}
+.product-datail .left-box .fdj{
+    height: 469px;
+    background-color: #f1f1f1;
+}
+.product-datail .left-box .buttom-text{
+    height: 29px;
+}
+.product-datail .left-box .buttom-text p{
+    text-align: center;
+    font-size: 13px;
+    color: #646464;
+    font-weight: 400;
+    margin-top: 5px;;
+}
+.product-datail .right-box{
+    height: 500px;
+    width: 815px;
+}
+.product-datail .right-box .book-info{
+    height: 95px;
+    margin-top: 30px;
+    
+}
+.product-datail .right-box .book-info h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333333;
+}
+.product-datail .right-box .book-info p{
+    line-height: 40px;
+}
+.product-datail .right-box .book-info p:nth-child(2){
+    font-size: 18px;
+    color: red;
+}
+.product-datail .right-box .book-info p:nth-child(3){
+    color: #828282;
+    font-size: 15px;
+}
+.product-datail .right-box .promotion{
+    height: 140px;
+    margin-top: 30px;
+    background-color: #f5f5f5;
+}
+.product-datail .right-box .promotion p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #8c8c8c;
+    line-height: 38px;
+    letter-spacing: 4px;
+    word-spacing: 20px;
+}
+.product-datail .right-box .promotion p span{
+    margin-left: 10px;
+}
+.product-datail .right-box .promotio p:first-child span:first-child{
+    color: #f90e0e;
+    font-size: 20px;
+    font-weight: 600;
+}
+.product-datail .right-box .promotion p:first-child span:nth-child(3) > span{
+    text-decoration: line-through;
+}
+.product-datail .right-box .promotion p:first-child span:not(:first-child){
+    font-size: 12px;
+}
+.product-datail .right-box .promotion p:nth-child(2) span:not(:last-child){
+    color: red;
+}
+.product-datail .right-box .promotion p:last-child span{
+    width: 90px;
+    height: 30px;
+    color: white;
+    background-color: #ff6700;
+}
+.product-datail .right-box .operation{
+    height: 150px;
+    margin-top: 30px;
+}
+.product-datail .right-box .operation .kinds{
+    font-size: 14px;
+}
+
+.product-datail .right-box .operation .kinds div{
+    width: 90px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.product-datail .right-box .operation .many-btn{
+    height: 60px;
+    width: 280px;
+    background-color: #fff;
+    margin-top: 40px;
+    
+}
+.product-datail .right-box .operation .many-btn .btn{
+    height: 42px;
+    width: 64px;
+    position: relative;
+    top: 16px;
+}
+.product-datail .right-box .operation .many-btn .btn input{
+    height: 39px;
+    width: 40px;
+    float: left;
+    border: 1px solid #ccc;
+}
+.product-datail .right-box .operation .many-btn .btn .up{
+    height: 21px;
+    width: 20px;
+    border: 1px solid #ccc;
+    background-color: #e6e6e6;
+    font-size: 15px;
+    position: relative;
+    top: 0px;
+    right: 2px;
+}
+.product-datail .right-box .operation .many-btn .btn .down{
+    height: 21px;
+    width: 20px;
+    border: 1px solid #ccc;
+    background-color: #e6e6e6;
+    font-size: 15px;
+    position: relative;
+    top:-1px;
+    right: 2px;
+}
+.product-datail .right-box .operation .many-btn .shopcar{
+    width: 190px;
+    height: 60px;
+    border: 1px solid #ff6700;
+    background-color: #ff6700;
+    float: right;
+    margin-top: -42px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.product-datail .right-box .tips{
+    height: 29px;
+}
+.product-datail .right-box .tips p{
+    text-align: center;
+    font-size: 13px;
+    color: #646464;
+    font-weight: 400;
+    margin-top: 5px;;
+}
+.magnifier-container{
+    height: 380px !important;
+}
+/*============猜你喜欢===============*/
+.extension{
+    height: 490px;
+}
+.extension .title{
+    height: 47px;
+    border-bottom: 5px solid #ff6700;
+
+}
+.extension .title h2{
+    height: 47px;
+    width: 126px;
+    background-color: #ff6700;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 48px;
+   
+}
+.extension .content .top ul {
+    width: 1200px;
+    height: 260px;
+    margin-top: 10px;
+}
+.extension .content .top ul li{
+    width: 238px;
+    height: 259px;
+    float: left;
+    margin-top: -10px;
+    text-align: center;
+    line-height: 20px;
+}
+.extension .content .top ul li:hover{
+    background-color: #f2f2f2;
+}
+.extension .content .top ul li img{
+    margin-top: 10px;
+}
+.extension .content .top ul li p:nth-child(2){
+    margin-left: -80px;
+}
+.extension .content .top ul li p:nth-child(4){
+    margin-left: -39px;
+}
+.extension .content .top ul li p:nth-child(4) span{
+    color: red;
+}
+.extension .content .top ul li p:last-child{
+    color: red;
+    font-size: 20px;
+    margin-left: -64px;
+}

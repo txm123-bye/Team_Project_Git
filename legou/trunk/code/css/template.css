@@ -210,3 +210,56 @@
     word-spacing: 10px;
 
 }
+/*============猜你喜欢===============*/
+.extension{
+    height: 490px;
+}
+.extension .title{
+    height: 47px;
+    border-bottom: 5px solid #ff6700;
+
+}
+.extension .title h2{
+    height: 47px;
+    width: 126px;
+    background-color: #ff6700;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 48px;
+   
+}
+.extension .content .top ul {
+    width: 1200px;
+    height: 260px;
+    margin-top: 10px;
+}
+.extension .content .top ul li{
+    width: 238px;
+    height: 259px;
+    float: left;
+    margin-top: -10px;
+    text-align: center;
+    line-height: 20px;
+}
+.extension .content .top ul li:hover{
+    background-color: #f2f2f2;
+}
+.extension .content .top ul li img{
+    margin-top: 10px;
+}
+.extension .content .top ul li p:nth-child(2){
+    margin-left: -80px;
+}
+.extension .content .top ul li p:nth-child(4){
+    margin-left: -39px;
+}
+.extension .content .top ul li p:nth-child(4) span{
+    color: red;
+}
+.extension .content .top ul li p:last-child{
+    color: red;
+    font-size: 20px;
+    margin-left: -64px;
+}
