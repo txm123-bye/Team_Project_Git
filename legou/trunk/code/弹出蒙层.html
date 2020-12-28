@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐购(legou.com)-正品低价、品质保障、配送及时、轻松购物！</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <meta name="description"
+        content="乐购legou.com-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!"/>
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,乐购"/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/template.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/model.css">
+    
+</head>
+<body>
+    <!-- 1.顶部 -->
+    <div class="topbar">
+        <!-- 内部内容 -->
+        <div class="container clearfix">
+            <p class="fl"><a herf="#">www.legou.com</a></p>
+            <p class="fr"><span>欢迎光临&nbsp;<a class="title" herf="#">乐购</a></span>,<span>请<a herf="#" class="login">登录</a>\<a herf="#" class="register">注册</a></span></p>
+        </div>
+    </div>
+
+    <!-- 2.导航 -->
+    <div class="nav container" >
+        <!-- 搜索框 购物车 订单 -->
+        <div class="search-shopcart-order clearfix">
+            <!-- 购物车 & 订单 -->
+            <div class="shopcart-order fr">
+                <button>&emsp;购物车&emsp;<span>3</span></button>
+                <button>我的订单</button>
+            </div>
+            <div class="search-input  fr">
+                <input class="search" type="search" placeholder="创意文具"/>
+                <span class="span"></span>
+            </div>
+        </div>
+        <div class="category-menu clearfix">
+            <!-- 左侧 -->
+            <div class="left-logo fl">
+                <img src="./images/logo.jpg" />
+
+            </div>
+            <!-- 右侧 -->
+            <ul class="fr clearfix">
+                <li>图书</li>
+                <li>电子书</li>
+                <li>原创文学</li>
+                <li>服装</li>
+                <li>运动户外</li>
+                <li>孕婴童</li>
+                <li>家具</li>
+                <li>创意文具</li>
+                <li>地方特产</li>
+                <li>海外购</li>
+                <li>电器城</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 弹出蒙版 -->
+    <div class="container" style="height:500px;">
+        <button id="btn">提交订单</button>
+      
+    </div>
+
+
+    <!-- 11.尾部 -->
+    <div class="footer footer-container">
+        <div class="top">
+        </div>
+        <div class="logo-list">
+            <ul class="logo-wrap">
+                <li>
+                    <img src="./images/222_11.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/222_13(1).png" alt="">
+                </li>
+                <li>
+                    <img src="./images/222_15.png" alt="">
+                </li>
+                <li> 
+                    <img src="./images/222_17.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="footer-text ">
+            <img src="./images/logo_00.png" alt="">
+            <ul>
+                <li>
+                    <dl>
+                        <dt>购物指南</dt>
+                        <dd>购物流程</dd>
+                        <dd>发票制度</dd>
+                        <dd>账户管理</dd>
+                        <dd>会员优惠</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>购物指南</dt>
+                        <dd>购物流程</dd>
+                        <dd>发票制度</dd>
+                        <dd>账户管理</dd>
+                        <dd>会员优惠</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>购物指南</dt>
+                        <dd>购物流程</dd>
+                        <dd>发票制度</dd>
+                        <dd>账户管理</dd>
+                        <dd>会员优惠</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>购物指南</dt>
+                        <dd>购物流程</dd>
+                        <dd>发票制度</dd>
+                        <dd>账户管理</dd>
+                        <dd>会员优惠</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>购物指南</dt>
+                        <dd>购物流程</dd>
+                        <dd>发票制度</dd>
+                        <dd>账户管理</dd>
+                        <dd>会员优惠</dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <p>公司简介 | Investor Relations | 网站联盟 | 乐购招商 | 机构销售 | 手机乐购 | 官方Blog | 热词搜索</P>
+                <P> Copyright (C) 乐购网 2019-2025， All Rights Reserved </P>   
+            </li>
+            </ul>
+        </div>
+    </div>
+<!--蒙层-->
+<div class="model">
+    <div class="content">
+        <button id="close">x</button>
+    </div>
+</div>
+
+        <!--------------------------- 插件的引入------------------------------>
+            <!-- 引入jquery。mi.js -->
+            <script src="./js/jquery-1.11.3.min.js"></script>
+            <script>
+                $(function(){
+                       //打开模态框
+                    $('#btn').click(function(){
+                          $('.model').fadeIn();
+                    })
+                     //关闭模态框
+                     $('#close').click(function(){
+                        $('.model').fadeOut();
+                     })
+                })
+             </script>
+            
+        </body>
+        </html>
+        
+        <!-- © 2020 GitHub, Inc.
+        Terms
+        Privacy
+        Security
+        Status
+        Help
+        Contact GitHub
+        Pricing
+        API
+        Training
+        Blog
+        About -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

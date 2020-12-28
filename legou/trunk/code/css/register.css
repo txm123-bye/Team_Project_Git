@@ -1,0 +1,108 @@
+.nav{
+    width: 1519px;
+    height: 89px;
+    margin-top: -15px;
+    background-color: #fff;
+}
+.nav .category-menu .left-logo img{
+    position: relative;
+    top:-28px;
+
+}
+.nav .category-menu {
+    background-color: #fff;
+}
+.nav .category-menu .welcome p:first-child{
+    font-size: 30px;
+    color: #666666;
+    position: relative;
+    top:25px;
+    left: 15px;
+
+}
+.nav .category-menu .welcome p:last-child{
+    position: relative;
+    left: 900px;
+    bottom: -5px;
+    font-size: 20px;
+    color: #a5a5a5;
+}
+.nav .category-menu .welcome p:last-child span{
+    color: black;
+}
+.register-page{
+    height: 700px;
+    width: 400px;
+    margin: 30px auto;
+}
+.register-page p{
+    width: 398px;
+    height: 43px; 
+    margin-top: 50px;
+    border: 1px solid #ccc; 
+   
+}
+.register-page p input{
+    width: 268px;
+    height: 37px;
+    border: 1px solid #fff;
+    position: relative;
+   
+    top: -3px;
+    right: -22px;
+    outline: none;
+}
+
+.register-page p span{
+    width: 101px;
+    height: 44px;
+    display: inline-block;
+    line-height: 45px;
+    font-size:20px ;
+    text-align: center;
+
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.register-page div{
+    width: 398px;
+    height: 43px;
+    margin-top: 20px;
+    color: #666;
+}
+.register-page div span input{
+    width: 15px;
+    height: 15px;
+    border:1px solid #ccc;
+
+    position: relative;
+    top: 3px;
+}
+.register-page div span:last-child .agreement{
+    color: #ff6700;
+}
+.register-page p:last-child{
+    position: relative;
+    top: -30px;
+
+    border: none;
+    font-size: 28px;
+    text-align: center;
+    
+}
+.register-page p:last-child button{
+    width: 398px;
+    height: 43px;
+    color: white;
+    background-color: #ff6700;
+    border: 1px solid #ff6700;
+}
+.register-page label{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    
+    color: #ff6700;
+
+}
